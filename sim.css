@@ -1,0 +1,8 @@
+body{background-color: violet;text-align: center;}
+
+.row{display: flex;flex-direction: row;justify-content: center;}
+.button{height: 200px;width: 200px;margin: 10px;border-radius: 30px;border-width: thick;border-style:solid;}
+#red{background-color: red;}
+#blue{background-color: blue;}
+#green{background-color:green;}
+#yellow{background-color:yellow;}
