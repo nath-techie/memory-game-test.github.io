@@ -1,11 +1,9 @@
-
-
 var butc=["red","blue","green","yellow"];
 var pat=[];
 var upat=[];
 var start=0;
 var level=0;var unk=0;
-$(document).on("keypress",function()
+$("#level").on("click",function()
 { if(start!=1){
    sequence();unk=1;
  }start=1;
@@ -18,7 +16,8 @@ $(".button").click(function userclick()
 upat.push(clickedbtn);console.log(upat);
 checkanswer(upat.length-1);
 }
-else{ $("#level").prepend("<span>👉</span>");}
+else{ $("#level").prepend("<span>👉</span>");
+}
 });
 
 function sequence(){upat=[];
@@ -34,7 +33,8 @@ function checkanswer(a)
   {if (pat.length==upat.length) {console.log("succes");setTimeout(function(){sequence();},1000); }
   }
   else {
-    $("#level").text("Game Over, Press Any Key to Restart");
+    $("#level").text("Game Over");
+    $("#ref").text(" Refresh the page to Restart");
   }
 }
 
